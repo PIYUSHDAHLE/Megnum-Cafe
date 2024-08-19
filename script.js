@@ -24,3 +24,5 @@ $(document).ready(function () {
         y: "-100%",
         duration: 1,
       })
+
+      
