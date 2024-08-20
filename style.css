@@ -16,6 +16,8 @@ main{
     min-height: 100vh;
 }
 
+/* loading page  */
+
 .loader{
     position: absolute;
     width: 100%;
@@ -115,4 +117,21 @@ main{
 
         background-color: rgb(202, 187, 55);
     }
+}
+/* Home page */
+.home1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://media.istockphoto.com/id/821475092/photo/presentation-concept.webp?b=1&s=170667a&w=0&k=20&c=UHYSZZKY6j_5ixJLIQ6LiNIA23F3rQ2gRwvLnva8SzA=);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    overflow: hidden;
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    z-index: 1;
 }
