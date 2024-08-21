@@ -1,137 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-height: 100%;
-width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-main{
-    width: 100%;
-    min-height: 100vh;
+main {
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* loading page  */
 
-.loader{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(0, 174, 255);
-    animation: bgcolor 4.5s;
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 174, 255);
+  animation: bgcolor 4.5s;
 }
 
-.zoom{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-70%);
-    font-size: 25rem;
-    font-family: "New Amsterdam", sans-serif;
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    outline: none;
-    font-weight: 200;
+.zoom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 25rem;
+  font-family: "New Amsterdam", sans-serif;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  outline: none;
+  font-weight: 200;
 }
 
-.loader h1{
-    position: absolute;
-    top:55%;
-    font-weight: 100;
-    left: 50%;
-    transform: translate(-50%,-10%);
-    font-size: 10rem; 
-    font-family: "New Amsterdam", sans-serif;
-    color: white;
+.loader h1 {
+  position: absolute;
+  top: 55%;
+  font-weight: 100;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 10rem;
+  font-family: "New Amsterdam", sans-serif;
+  color: white;
 }
 
-.box{
-   position: relative; 
-   left: 50%;
-   width: 40%;
-   bottom: -76%;
-   height: 10px;
-   transform: translate(-50%,-20%);
-   background-color: white;
-   border-radius: 4px;
-   overflow: hidden;
-   display: inline-block;
+.box {
+  position: relative;
+  left: 50%;
+  width: 40%;
+  bottom: -76%;
+  height: 10px;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-block;
 }
 
-.box::after{
-    content: "";
-    position: absolute;
-    top: -5%;
-    height: 100%;
-    width: 100%;
-    border-radius: 4px;
-    animation: load 4.5s;
+.box::after {
+  content: "";
+  position: absolute;
+  top: -5%;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  animation: load 4.5s;
 }
 
 @keyframes load {
-    0%{
-        width: 0;
-        background-color: rgb(68, 184, 145);
-    }
-    25%{
-        width: 25;
-        background-color: rgb(60, 181, 56);
-    }
-    50%{
-        width: 50;
-        background-color: rgb(168, 203, 255);
-    }
-    75%{
-        width: 75;
-        background-color: rgb(255, 168, 212);
-    }
-    100%{
-        width: 100;
-        background-color: rgb(202, 187, 55);
-    }
+  0% {
+    width: 0;
+    background-color: rgb(68, 184, 145);
+  }
+  25% {
+    width: 25;
+    background-color: rgb(60, 181, 56);
+  }
+  50% {
+    width: 50;
+    background-color: rgb(168, 203, 255);
+  }
+  75% {
+    width: 75;
+    background-color: rgb(255, 168, 212);
+  }
+  100% {
+    width: 100;
+    background-color: rgb(202, 187, 55);
+  }
 }
 @keyframes bgcolor {
-    0%{
-    
-        background-color: rgb(68, 184, 145);
-    }
-    25%{
-   
-        background-color: rgb(60, 181, 56);
-    }
-    50%{
-
-        background-color: rgb(168, 203, 255);
-    }
-    75%{
-
-        background-color: rgb(255, 168, 212);
-    }
-    100%{
-
-        background-color: rgb(202, 187, 55);
-    }
+  0% {
+    background-color: rgb(68, 184, 145);
+  }
+  25% {
+    background-color: rgb(60, 181, 56);
+  }
+  50% {
+    background-color: rgb(168, 203, 255);
+  }
+  75% {
+    background-color: rgb(255, 168, 212);
+  }
+  100% {
+    background-color: rgb(202, 187, 55);
+  }
 }
 /* Home page */
-.home1{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://media.istockphoto.com/id/821475092/photo/presentation-concept.webp?b=1&s=170667a&w=0&k=20&c=UHYSZZKY6j_5ixJLIQ6LiNIA23F3rQ2gRwvLnva8SzA=);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0;
-    overflow: hidden;
-    transition:all cubic-bezier(0.19, 1, 0.22, 1) 2s;
-    z-index: 1;
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(image/bg-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  overflow: hidden;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+  z-index: 99;
+}
+
+#layout {
+  width: 130%;
+  height: 145vh;
+  padding: 15rem 5rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  background: rgba(63, 94, 251, 0.158);
+  background: linear-gradient(
+    353deg,
+    rgba(63, 94, 251, 0.315) 0%,
+    rgba(252, 70, 106, 0.199) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  animation: dotte 8s ease-in-out alternate infinite;
+}
+
+#layout > img:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12vw;
+  animation: updown 2s ease-in-out alternate infinite;
+  opacity: 0;
+}
+
+#megnum-1 {
+  width: 9vw;
+
+  animation: letter 1.9s ease-in-out alternate infinite;
+}
+#megnum-2 {
+  width: 5vw;
+
+  animation: letter 1.9s ease-in-out alternate infinite;
+}
+#megnum-3 {
+  width: 7vw;
+
+  animation: letter 1.8s ease-in-out alternate infinite;
+}
+#megnum-4 {
+  width: 10vw;
+
+  animation: letter 1.9s ease-in-out alternate infinite;
+}
+#megnum-5 {
+  width: 7vw;
+
+  animation: letter 1.8s ease-in-out alternate infinite;
+}
+#megnum-6 {
+  width: 7vw;
+  animation: letter 1.9s ease-in-out alternate infinite;
+}
+
+#explore {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 90%;
+  width: 10vw;
+  height: 3vw;
+  color: #ccfcff;
+  background: #440100a1;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border: none;
+  border: 1px solid white;
+}
+
+#explore:hover {
+  background-color:#5049DB;
+}
+
+@keyframes updown {
+  from {
+    margin-top: 5vw;
+  }
+
+  to {
+    margin-top: 6vw;
+  }
+}
+
+@keyframes letter {
+  from {
+    margin-top: 0vw;
+  }
+
+  to {
+    margin-top: 1vw;
+  }
 }
