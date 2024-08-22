@@ -175,3 +175,7 @@ $(document).ready(function () {
       });
     });
          
+    function example() {
+      window.location.href = "again.html";
+    }
+    
