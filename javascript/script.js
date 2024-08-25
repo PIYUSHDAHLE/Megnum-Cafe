@@ -156,7 +156,7 @@ $(document).ready(function () {
           .to("#logo-0", {
             width: "80vw",
             top: "-10%",
-            rotate: "360deg",
+            scale: "1",
             ease: "ease.out",
             duration: 1,
             opacity: 0,
