@@ -60,9 +60,16 @@ nav .mid{
 }
 
 nav .mid a{
-text-decoration: none;
+text-decoration: transparent;
 color: var(--brown);
 font-family: bellefair;
+transition: all 0.25s ease-in-out;
+}
+nav .mid a:hover{
+text-decoration: underline;
+text-underline-offset: 0.3em;
+transform: scale(1.05);
+color: var(--wow);
 }
 
 nav .right{
@@ -72,14 +79,9 @@ nav .right{
     font-size: 25px;
     gap: 15px;
 }
-nav .right button{
-    font-size: 18px;
-    border-radius: 5px;
-    border: none;
-    background-color: var(--brown);
-    padding: 10px;
-    color: var(--osm);
-    font-family: bellefair;
+nav .right i:hover{
+    color: var(--wow);
+    cursor: pointer;
 }
 nav .right button{
     font-size: 18px;
@@ -89,6 +91,12 @@ nav .right button{
     padding: 10px;
     color: var(--osm);
     font-family: bellefair;
+    transition: 0.25s ease-out;
+}
+nav .right button:hover{
+    transform:matrix();
+    background-color: var(--nice);
+    color: var(--wow);
 }
 
 
