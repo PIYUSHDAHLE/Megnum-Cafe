@@ -1,0 +1,96 @@
+@font-face {
+    font-family: chaney;
+    src: url(/Fonts/chaney-ultraextended-webfont.ttf);
+  }
+  @font-face {
+    font-family: bellefair;
+    src: url(/Fonts/Bellefair-Regular.ttf);
+  }
+  @font-face {
+    font-family: capitol;
+    src: url(/Fonts/CapitoliumNews2-Regular.ttf);
+  }
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body{
+height: 100%;
+width: 100%;
+}
+
+:root {
+    --wow: #FFF5E4;
+    --purple: #8F55FF;
+    --nice: #421C60;
+    --osm:#bfbcf5;
+    --brown:#490001;
+  }
+  
+body > header > nav {
+    background-color: var(--osm); 
+    color: var(--brown);
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 0 2rem;
+    
+}
+
+nav .left{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ font-size: 20px;
+ text-transform: uppercase;
+ font-family: chaney;
+}
+
+nav img{
+    width: 60px;
+}
+nav .mid{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ font-size: 25px;
+ gap: 15px;
+}
+
+nav .mid a{
+text-decoration: none;
+color: var(--brown);
+font-family: bellefair;
+}
+
+nav .right{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 15px;
+}
+nav .right button{
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--brown);
+    padding: 10px;
+    color: var(--osm);
+    font-family: bellefair;
+}
+nav .right button{
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--brown);
+    padding: 10px;
+    color: var(--osm);
+    font-family: bellefair;
+}
+
+
+
+

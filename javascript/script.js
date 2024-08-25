@@ -175,7 +175,7 @@ $(document).ready(function () {
       });
     });
          
-    function example() {
-      window.location.href = "again.html";
+    function nextPage() {
+      window.location.href = "main.html";
     }
     
