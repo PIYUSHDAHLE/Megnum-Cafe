@@ -11,7 +11,7 @@ $(document).ready(function () {
     opacity: 0,
     delay: 4,
   })
-  
+
     .to(".loader", {
       opacity: 0,
       duration: 1,
@@ -176,6 +176,6 @@ $(document).ready(function () {
     });
          
     function nextPage() {
-      window.location.href = "main.html";
+      window.location.href = "page/main.html";
     }
     
