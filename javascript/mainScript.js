@@ -42,7 +42,7 @@ tl.to(".img1", {
       end:'top -70%',
       scrub:2,
       pin:true,
-      markers:true
+      markers:false
     }
   })
 
@@ -57,7 +57,7 @@ tl.to(".img1", {
       end:"top -150%",
       scrub:3,
       pin:true,
-      markers:true
+      markers:false
     }
   })
 
@@ -89,3 +89,33 @@ tl.to(".img1", {
     duration: 1,
   });
 
+// page 5
+
+gsap.from(".page5 h1",{
+  scale:1.3,
+  opacity:0,
+  duration:0.6,
+  scrollTrigger:{
+    trigger:".page5 h1",
+    scroller:"body",
+    // markers:true,
+    start:"top 50%",
+    end:"top 40%",
+    scrub:2
+  }
+})
+
+gsap.from(".page5 .cards-section .card",{
+  y:130,
+  opacity:0,
+  duration:0.8,
+  stagger:0.3,
+  scrollTrigger:{
+    trigger:".cards-section .card",
+    scroller:"body",
+    markers:false,
+    start:"top 70%",
+    end:"top 40%",
+    scrub:2
+  }
+})

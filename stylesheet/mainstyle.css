@@ -253,7 +253,74 @@ body{
 }
 
 .page5 {
-  height: 100vh;
+  height: 160vh;
   width: 100%;
   background-color:var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.page5 .cards-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.page5 h1{
+  font-size: 150px;
+  font-weight:100;
+  text-transform: uppercase;
+  font-family: bellefair;
+  color: var(--brown);
+}
+
+.page5 .card{
+  width: 300px;
+  height: 340px;
+  background-color: var(--brown);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border-radius: 20px;
+}
+.page5 .card img{
+  width: 300px;
+  height: 200px;
+  background-color: var(--brown);
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.page5 .card h2{
+  color: var(--wow);
+  text-transform: capitalize;
+  font-family: capitol;
+}
+.page5 .card h3{
+  color: var(--wow);
+  text-transform: capitalize;
+  font-family: capitol;
+}
+
+.page5 .card button{
+  font-family: capitol;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding:8px 20px;
+  font-weight: bolder;
+  font-size: 15px;
+  border: none;
+  background-color:var(--osm);
+  color: var(--brown);
+}
+.page5 .card button:hover{
+  background-color:var(--wow);
+  color: var(--brown);
+  cursor: pointer;
 }
