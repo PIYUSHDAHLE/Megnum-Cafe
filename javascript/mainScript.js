@@ -60,3 +60,32 @@ tl.to(".img1", {
       markers:true
     }
   })
+
+  // page4
+
+  var tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".page4",
+      scroller: "body",
+      start: "top -13%",
+      end: "top -80%",
+      scrub: 1,
+      pin: true,
+    },
+  });
+
+  tl.to(".page4-heading", {
+    gap: "500px",
+    duration: 0.6,
+  });
+  tl.to(".page4 .page4-video", {
+    opacity: 1,
+    duration: 0.5,
+  });
+  tl.to(".page4 .page4-video", {
+    scale: 3,
+    top: "45%",
+    left: "35%",
+    duration: 1,
+  });
+
