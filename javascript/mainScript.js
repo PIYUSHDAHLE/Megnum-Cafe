@@ -191,3 +191,32 @@ ab.to(".content4, .pic4", {
    scale: 1,
   duration: 0.6,
 });
+
+// page 7
+
+gsap.from(".page7 .left",{
+  opacity:0,
+  duration:1,
+  rotate:"1500deg",
+  scrollTrigger:{
+    trigger:".page7 .left",
+    scroller:"body",
+    markers:true,
+    start:"top 0%",
+    end:"top 40%",
+    scrub:2
+  }
+})
+gsap.from(".page7 .right",{
+  scale:1.3,
+  opacity:0,
+  duration:1,
+  scrollTrigger:{
+    trigger:".page7 .right",
+    scroller:"body",
+    markers:true,
+    start:"top 0%",
+    end:"top 40%",
+    scrub:2
+  }
+})

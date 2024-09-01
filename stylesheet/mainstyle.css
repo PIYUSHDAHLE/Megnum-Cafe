@@ -440,3 +440,97 @@ clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78
   transform: scale(0.1);
   opacity: 0;
 }
+
+.page7{
+  width: 100%;
+  height:130vh;
+  background-image: url(https://images.unsplash.com/photo-1714030161921-ac3459435db3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwc2hvcCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page7 .layout{
+  padding-top: 7rem;
+  width: 100%;
+  height: 130vh;
+  background-color:#00000077;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 5rem;
+}
+
+.page7 .left img{
+   filter: drop-shadow(2px 2px 5px white);
+   width: 560px;
+}
+
+.page7 .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #bfbcf56e;
+  padding: 5rem;
+  border-radius: 10px;
+
+}
+
+.page7 .right h1{
+  font-size: 30px;
+  font-weight:100;
+  text-transform: uppercase;
+  font-family: bellefair;
+  color: var(--wow);
+}
+.page7 .right input{
+   width: 20rem;
+   height: 2rem;
+   padding: 10px;
+   border-radius: 10px;
+   border: none;
+   outline: none;
+   font-family: bellefair;
+   font-size: 20px;
+   background-color:#fff5e488;
+   
+}
+::placeholder {
+  color: var(--nice);
+}
+
+.page7 .right textarea{
+  width: 20rem;
+  height: 5rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: bellefair;
+  font-size: 20px;
+  background-color:#fff5e488;
+  color: var(--nice);
+}
+.page7 .right button{
+ padding: 0.5rem 3rem;
+ border: none;
+ border-radius: 10px;
+ font-size: 15px;
+ font-weight: 600;
+ text-transform: uppercase;
+ background-color: var(--nice);
+ color: var(--osm);
+}
+
+.page7 .right button:hover{
+  background-color: var(--brown);
+  cursor: pointer;
+}
+
+footer{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--nice);
+}
