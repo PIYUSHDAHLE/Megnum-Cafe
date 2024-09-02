@@ -201,8 +201,8 @@ gsap.from(".page7 .left",{
   scrollTrigger:{
     trigger:".page7 .left",
     scroller:"body",
-    markers:true,
-    start:"top 0%",
+    // markers:true,
+    start:"top 20%",
     end:"top 40%",
     scrub:2
   }
@@ -214,8 +214,8 @@ gsap.from(".page7 .right",{
   scrollTrigger:{
     trigger:".page7 .right",
     scroller:"body",
-    markers:true,
-    start:"top 0%",
+    // markers:true,
+    start:"top 20%",
     end:"top 40%",
     scrub:2
   }
